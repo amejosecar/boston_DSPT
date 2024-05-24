@@ -1,0 +1,15 @@
+Actividades a realizar:
+
+Listo - Crear un repositorio de Github.
+
+Un README.md 
+             * donde se describe la tarea realizada
+       listo - los nombres del equipo
+
+Listo - Una carpeta _data_ con la copia de los datos.
+
+* Uno o varios Notebooks con el ejercicio realizado, a modo de informe de conclusiones.
+
+Listo - Un fichero _requirements.txt_ que liste las librerías se han utilizado (numpy, pandas, etc.)
+
+* El informe resultante deberá contener conclusiones sobre la región de Boston. Posiblemente podáis encontrar la forma de representar vuestras conclusiones de manera visual.
