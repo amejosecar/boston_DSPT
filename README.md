@@ -3,4 +3,4 @@ Analisis del ejercicio de los datos relacionados de las casas de Boston. Bootcam
 Las tareas realizadas han sido:
 
 Los/las integrantes del grupo son:
-Americo, Mikel, D. Alejandro, Elena y Rodrigo.
+Americo, Mikel, D. Alejandro, Elena y Rodrigo..
