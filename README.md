@@ -7,7 +7,7 @@ Analisis del ejercicio de los datos relacionados de las casas de Boston.
 Los/las integrantes del grupo son:
 Elena Craciun,
 Mikel Cerio,
-Daniel Alejandro, 
+Daniel Alejandro Salsero, 
 Rodrigo Meza Ortiz,
 Americo Carrillo.
 
