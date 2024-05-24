@@ -1,1 +1,9 @@
 Poner aquí lista de librerias usadas:
+-seaborn as sns
+-pandas as pd
+-numpy as np
+-matplotlib.pyplot as plt
+-folium
+-geocoder
+
+Y los datos geográficos de vega_datasets.
