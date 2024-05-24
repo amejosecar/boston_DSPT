@@ -1,7 +1,8 @@
 # Boston EDA
 
-Analisis del ejercicio de los datos relacionados de las casas de Boston. Bootcamp de DSPT 2024
-Las tareas realizadas han sido:
+Bootcamp de DSPT 2024
+
+Analisis del ejercicio de los datos relacionados de las casas de Boston. 
 
 Los/las integrantes del grupo son:
 Elena Craciun
