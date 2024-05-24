@@ -12,3 +12,4 @@ Rodrigo Meza Ortiz
 Americo Carrillo
 
 ![image](https://github.com/amejosecar/boston_DSPT/assets/148058680/0c54520a-9c8c-4369-89a8-0609da3956ae)
+.
