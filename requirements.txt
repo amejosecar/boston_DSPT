@@ -1,3 +1,4 @@
+**La versión a usar de Python es 3.11.7**
 Poner aquí lista de librerias usadas:
 -seaborn as sns
 -pandas as pd
