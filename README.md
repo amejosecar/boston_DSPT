@@ -11,4 +11,7 @@ Daniel Alejandro Salsero,
 Rodrigo Meza Ortiz,
 Americo Carrillo.
 
+Instructor: Iraitz Montalbán
+Profesor Asistente: Luis Miguel Andújar Baena
+
 ![image](https://github.com/amejosecar/boston_DSPT/assets/148058680/0c54520a-9c8c-4369-89a8-0609da3956ae)
