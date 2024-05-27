@@ -1,0 +1,147 @@
+Nomenclatura de los datos de la tabla “boston_house_price”. 
+
+CRIM: Índice de criminalidad per cápita 
+
+ZN: Proporción de superficie residencial establecida en lotes mayores de 25.000 s.f. (equivalente a 2.223 metros cuadrados). 
+
+INDUS: Proporción de superficie de negocio no minorista. 
+
+CHAS: Es la variable ficticia “río Charles” (igual a 1 si el tramo considerado está en la ribera del río, 0 en el otro caso) 
+
+NOX: Concentración de óxidos de nitrógeno (partes por 10 millones) 
+
+RM: Número promedio de habitaciones por vivienda 
+
+AGE: Proporción de viviendas en propiedad ocupadas, construidas antes de 1940 
+
+DIS: Distancias ponderadas a cinco centros de empleo de Boston 
+
+RAD: Índice de accesibilidad a las autopistas radiales 
+
+TAX: Parte del impuesto de bienes inmuebles por cada 10.000 $ de propiedad 
+
+PTRATIO: Ratio de alumnos por profesor 
+
+B: Se calcula como 1000(Bk — 0.63)², donde Bk es la proporción de personas de descendencia Afroamericana 
+
+LSTAT: Porcentaje de población de “estatus de bajo nivel” 
+
+PRICE: Valor de viviendas en propiedad (en miles de dólares) 
+
+
+Los datos a trabajar fueron proporcionados en un archivo llamado “boston_house_price”, cuya extensión es “.csv”. Para la manipulación y análisis de los datos se utilizó la herramienta informática Visual 
+Studio Code. La manipulación de los datos y el análisis estadístico de estos se presenta a continuación: 
+
+1.	Carga y estadísticas generales de los datos: 
+
+Import numpy as np 
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+# Cargar los datos 
+FilePath = ' C:/Users/Escritorio/ EjercicioBoston/boston_DSPT/data/boston_house_prices.csv'
+boston = pd.read_csv(FilePath) 
+
+
+# Datos de las primeras filas de la tabla de datos 
+print(boston.head()) 
+
+	CRIM	ZN	INDUS	CHAS	NOX	RM	AGE
+0	0.00632	18.0	2.31	0	0.538	6.575	65.2
+1	0.02731	0.0	7.07	0	0.469	6.421	78.9
+2	0.02729	0.0	7.07	0	0.469	7.185	61.1
+3	0.03237	0.0	2.18	0	0.458	6.998	45.8
+4	0.06905	0.0	2.18	0	0.458	7.147	54.2
+
+	DIS	RAD	TAX	PTRATIO	B	LSTAT	PRICE
+0	40.900	1	296	15.3	396.90	4.98	24.0
+1	49.671	2	242	17.8	396.90	9.14	21.6
+2	49.671	2	242	17.8	392.83	4.03	34.7
+3	60.622	3	222	18.7	394.63	2.94	33.4
+4	60.622	3	222	18.7	396.90	5.33	36.2
+
+
+# Resumen estadístico de las variables del archivo de datos. 
+print(boston.describe()) 
+
+	         CRIM        ZN       	INDUS        	CHAS         	NOX          	RM        	AGE
+count	     506	      506	          506	          506	        506	          506	        506
+mean	     3.61	      11.36	        11.14	        0.07	      0.55	        6.28	      68.57
+std	       8.60	      23.32	        6.86	        0.25	      0.12	        0.70	      28.15
+min	       0.01	      0.00	        0.46	        0.00	      0.39	        3.56	       2.90
+25%	       0.08	      0.00	        5.19	        0.00	      0.45	        5.89	      45.02
+50%	       0.26	      0.00	        9.69	        0.00	      0.54	        6.21	      77.50
+75%	       3.68	     12.50	       18.10	        0.00	      0.62	        6.62	      94.08
+max	       88.98	  100.00	       27.74	        1.00	      0.87	        8.78	     100.00
+
+	            DIS         	    RAD         	TAX     	PTRATIO           	B       	LSTAT       	PRICE
+count	        506	              506	          506	      506	                506	      506	          506
+mean	          3.80    	      9.55  	      408.24 	  18.46	              356.68	   12.65 	       22.53
+std	            2.11    	      8.71	        168.54	   2.16  	             91.29	    7.14    	    9.20
+min	            1.13    	      1.00  	      187.00 	  12.60	                0.32    	1.73    	    5.00
+25%	            2.10    	      4.00	        279.00	  17.40	              375.38	    6.95   	     17.03
+50%	            3.21    	      5.00  	      330.00 	  19.05 	            391.44 	   11.36 	       21.20
+75%	            5.19   	       24.00 	        666.00 	  20.20 	            396.23	   16.96 	       25.00
+max	           12.13  	       24.00  	      711.00    22.00  	            396.90	   37.97	       50.00
+
+Nomenclatura de la tabla. 
+
+count: Cantidad de datos por cada variable. 
+
+mean: La media.
+
+std: Desviación estándar. Es la variación o dispersión en la que los puntos de datos individuales difieren de la media de la variable en estudio. 
+
+min: Valor mínimo de la variable. 
+
+25%: Percentil. Indicador que señala que una vez ordenados los datos de menor a mayor, este se encuentra en la posición del 25% de los datos desde el dato menor al mayor.
+
+50%: Percentil. Indicador que señala que una vez ordenados los datos de menor a mayor, este se encuentra en la posición del 50% de los datos desde el dato menor al mayor.
+
+75%: Percentil. Indicador que señala que una vez ordenados los datos de menor a mayor, este se encuentra en la posición del 75% de los datos desde el dato menor al mayor.
+
+max: Valor máximo de la variable. 
+
+
+Análisis descriptivo de las variables. 
+
+CRIM: En cuanto al índice de criminalidad per cápita de Boston, este tiene una media de 3,61 crímenes per cápita; con una desviación estándar de 8,60 lo cual indica que existe una gran variabilidad en los 
+índices de criminalidad per cápita de Boston. Sería interesante estudiar el comportamiento de esta variable por barrios de Boston, y así determinar en qué áreas de Boston hay más crímenes y en cuales hay menos. 
+
+ZN: Esta variable que representa la proporción de superficie residencial establecida en lotes mayores de 25.000 s.f. o pies cuadrados equivalentes a 2322,576 metros cuadrados o 0,23 hectareas. Tiene una media 
+de 11,36, y su rango de valores va desde 0 a 100, la mayoría de los datos tiene un valor entre 0 y 30. Sería interesante averiguar en que sectores de Boston se encuentran las superficies residenciales con lotes 
+mayores de 25.000 s.f. 
+
+INDUS: La proporción de superficie de negocio no minorista tiene una media de 11,14, con un valor máximo de 27, 74. Sería interesante averiguar en que sectores de Boston se encuentran las superficies de negocio 
+no minorista más grandes. 
+
+CHAS: Esta variable muestra que una fracción muy pequeña de las viviendas están en la ribera del río Charles, siendo de un 7% del total de las viviendas. 
+
+NOX: La concentración de oxido de Nitrógeno en la atmosfera, medida en partes por cada 10 millones de partículas, tiene una media de 0,55, con una dispersión moderada. Siendo su valor mínimo de 0,39 y 
+su valor máximo de 0,87. 
+
+RM: La cantidad media de habitaciones por vivienda es de 6,28, con una desviación estándar de 0,70. Además, su rango de valores está entre 3,56 y 8,78. Sería interesante averiguar como se distribuyen en
+Boston las viviendas según la cantidad de habitaciones que estas tengan. 
+
+AGE: La proporción de viviendas en propiedad ocupadas y que además fueron construidas antes de 1940, tiene una media de 68,57%. 
+
+DIS: La distancia promedio ponderada a los cinco centros de empleo de Boston es de 3,80, y la desviación estándar es de 2,11. Sería interesante posicionar esos cinco centros de empleo en el mapa de Boston 
+y determinar su proximidad a las viviendas de Boston. 
+
+RAD: El índice de accesibilidad a las autopistas radiales varía de 1 a 24, con un valor medio de 9,55. Sería interesante averiguar cuales son las viviendas que tienen un acceso más cercano a las autopistas 
+radiales. 
+
+TAX: El valor de la media del pago de impuestos de bienes inmuebles es de 408,24, y su rango de valores varia desde 187 hasta 711. Seria interesante averiguar que barrios de Boston pagan más impuestos de
+bienes, y en que barrios se pagan menos impuestos de bienes inmuebles. 
+
+PTRATIO: El ratio de alumnos por profesor tiene una media de 18,46, el que varía entre 12,60 y 22,00. Sería interesante averiguar en que barrios de Boston la educación es más personalizada.  
+
+B: Este índice tiene un valor esperado promedio de población descendiente afroamericana en Boston es de 0,63. Señala la magnitud de la desviación de la proporción de Afroamericanos en un barrio de Boston 
+respecto al valor 0,63. La media de esta variable es de 356,68 y su desviación estándar es de 91,29; lo que indica una gran dispersión de los datos. 
+
+LSTAT: El porcentaje de la población de estatus de bajo nivel tiene una media de 12,65%, y su rango varía desde 1,73% hasta 37,97%. Sería interesante averiguar que barrios de Boston presentan una mayor pobreza. 
+
+PRICE: El valor medio de las viviendas en propiedad es de 22,53 (en miles de dólares). Su rango de valores fluctúa entre los 5,00 y los 50,00. Sería interesante averiguar cual es el valor medio de 
+las viviendas en cada barrio de Boston. 
