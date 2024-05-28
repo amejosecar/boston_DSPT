@@ -11,4 +11,4 @@ TAX: Parte del impuesto de bienes inmuebles por cada 10.000 $ de propiedad
 PTRATIO: Ratio de alumnos por profesor
 B: Se calcula como 1000(Bk — 0.63)², donde Bk es la proporción de personas de descendencia Afroamericana
 LSTAT: Porcentaje de población de “estatus de bajo nivel”
-MEDV: Mediana del valor de viviendas en propiedad (en miles de dólares)
+PRICE: Mediana del valor de viviendas en propiedad (en miles de dólares)
