@@ -14,6 +14,7 @@ De lo que yo creo que podemos hacer es lo siguiente:
 5.	Agrupación por características de vivienda (RM, AGE):
     •	Uso: Analizar vecindarios con diferentes tipos y antigüedad de viviendas para estudios de mercado inmobiliario.
 6.	Agrupación por accesibilidad y transporte (DIS, RAD):
+
     •	Uso: Estudiar la conectividad y accesibilidad de los vecindarios para mejorar infraestructuras de transporte.
 7.	Agrupación por factores económicos y educativos (TAX, PTRATIO, LSTAT, PRICE):
     •	Uso: Identificar vecindarios con diferentes niveles económicos y educativos para políticas de equidad y desarrollo social.
